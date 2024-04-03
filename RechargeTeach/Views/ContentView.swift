@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let offwhiteBG = Color(red: 234, green: 231, blue: 231)
     var body: some View {
+        Color(offwhiteBG).ignoresSafeArea()
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("hello")
         }
-        .padding()
     }
 }
 
