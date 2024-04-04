@@ -10,12 +10,14 @@
 import Foundation
 import SwiftUI
 
-let offwhiteBG = Color(red: 234/255, green: 231/255, blue: 231/255)
-let chocBrown = Color(red: 152/255, green: 94/255, blue: 73/255)
-
-let dailyWord = DailyWord.getDailyWord()
-
 struct NavView: View {
+
+    let offwhiteBG = Color(red: 234/255, green: 231/255, blue: 231/255)
+    let chocBrown = Color(red: 152/255, green: 94/255, blue: 73/255)
+
+    let dailyWord = DailyWord.getDailyWord()
+
+
     var body: some View {
         NavigationView {
             VStack {
@@ -39,8 +41,8 @@ struct NavView: View {
 
                         // FOCUS
                         NavigationLink(destination:
-                                        Text("Second screen."))
-                        {
+                                        Text("Second screen.")) {
+                                        // replace w view
                             ZStack {
                                 HStack{
                                     Text("Focus")
@@ -68,8 +70,8 @@ struct NavView: View {
 
                         // FIDGET - might change ??
                         NavigationLink(destination:
-                                        Text("Second screen."))
-                        {
+                                        Text("Second screen.")) {
+                                        // replace w view
                             ZStack {
                                 HStack{
                                     Text("Fidget")
@@ -96,8 +98,8 @@ struct NavView: View {
 
                         // INSPIRATION
                         NavigationLink(destination:
-                                        Text("Second screen."))
-                        {
+                                        Text("Second screen.")) {
+                                        // replace w view
                             ZStack {
                                 HStack{
                                     Text("Inspiration")
@@ -128,6 +130,7 @@ struct NavView: View {
             }.background(chocBrown) // vstack
                                                 // add thin black line to make a border for the header and footer ? maybe ? kinda aesthetic
         } // navview
+        .navigationBarBackButtonHidden(true)
     }
 }
 

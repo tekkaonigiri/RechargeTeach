@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		47E136A12B959CFE00872439 /* LoadingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E136A02B959CFE00872439 /* LoadingPageView.swift */; };
 		47E136A32B959D2700872439 /* BeginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E136A22B959D2700872439 /* BeginPage.swift */; };
 		47F37CFE2BBDDEEC0084B232 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37CFD2BBDDEEC0084B232 /* NavView.swift */; };
 		47F37D0E2BBE4CD80084B232 /* Jost.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F37D0C2BBE30B00084B232 /* Jost.ttf */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47E136A02B959CFE00872439 /* LoadingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPageView.swift; sourceTree = "<group>"; };
 		47E136A22B959D2700872439 /* BeginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPage.swift; sourceTree = "<group>"; };
 		47F37CFD2BBDDEEC0084B232 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		47F37D052BBE2AE50084B232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -93,14 +91,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		47E136A42B959D3000872439 /* Animations */ = {
-			isa = PBXGroup;
-			children = (
-				47E136A02B959CFE00872439 /* LoadingPageView.swift */,
-			);
-			path = Animations;
-			sourceTree = "<group>";
-		};
 		47F37D0B2BBE30AA0084B232 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				47E1369F2B959CD300872439 /* Views */,
-				47E136A42B959D3000872439 /* Animations */,
 				47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */,
 				47FF44152B5B1EEF00367F38 /* Assets.xcassets */,
 				47FF441A2B5B1EEF00367F38 /* RechargeTeach.entitlements */,
@@ -303,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E136A32B959D2700872439 /* BeginPage.swift in Sources */,
-				47E136A12B959CFE00872439 /* LoadingPageView.swift in Sources */,
 				47FF44142B5B1EEE00367F38 /* ContentView.swift in Sources */,
 				47F37CFE2BBDDEEC0084B232 /* NavView.swift in Sources */,
 				47FF44122B5B1EEE00367F38 /* RechargeTeachApp.swift in Sources */,

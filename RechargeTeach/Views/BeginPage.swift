@@ -48,11 +48,11 @@ struct BeginPage: View {
                     }
                 } // hstack.onappear
             } // main zstack
-            /*.onAppear {
+            /* .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     self.isActive = true
                 }
-            }*/
+            } */
         }
     }
 }
