@@ -10,6 +10,8 @@
 		47E136A12B959CFE00872439 /* LoadingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E136A02B959CFE00872439 /* LoadingPageView.swift */; };
 		47E136A32B959D2700872439 /* BeginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E136A22B959D2700872439 /* BeginPage.swift */; };
 		47F37CFE2BBDDEEC0084B232 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37CFD2BBDDEEC0084B232 /* NavView.swift */; };
+		47F37D0E2BBE4CD80084B232 /* Jost.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F37D0C2BBE30B00084B232 /* Jost.ttf */; };
+		47F37D112BBE4D9F0084B232 /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */; };
 		47FF44122B5B1EEE00367F38 /* RechargeTeachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */; };
 		47FF44142B5B1EEE00367F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF44132B5B1EEE00367F38 /* ContentView.swift */; };
 		47FF44162B5B1EEF00367F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FF44152B5B1EEF00367F38 /* Assets.xcassets */; };
@@ -40,6 +42,9 @@
 		47E136A02B959CFE00872439 /* LoadingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingPageView.swift; sourceTree = "<group>"; };
 		47E136A22B959D2700872439 /* BeginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeginPage.swift; sourceTree = "<group>"; };
 		47F37CFD2BBDDEEC0084B232 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
+		47F37D052BBE2AE50084B232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		47F37D0C2BBE30B00084B232 /* Jost.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jost.ttf; sourceTree = "<group>"; };
+		47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yellowtail-Regular.ttf"; sourceTree = "<group>"; };
 		47FF440E2B5B1EEE00367F38 /* RechargeTeach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RechargeTeach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeTeachApp.swift; sourceTree = "<group>"; };
 		47FF44132B5B1EEE00367F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +101,15 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		47F37D0B2BBE30AA0084B232 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */,
+				47F37D0C2BBE30B00084B232 /* Jost.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		47FF44052B5B1EEE00367F38 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +138,8 @@
 				47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */,
 				47FF44152B5B1EEF00367F38 /* Assets.xcassets */,
 				47FF441A2B5B1EEF00367F38 /* RechargeTeach.entitlements */,
+				47F37D052BBE2AE50084B232 /* Info.plist */,
+				47F37D0B2BBE30AA0084B232 /* Fonts */,
 				47FF44172B5B1EEF00367F38 /* Preview Content */,
 			);
 			path = RechargeTeach;
@@ -258,8 +274,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47F37D0E2BBE4CD80084B232 /* Jost.ttf in Resources */,
 				47FF44192B5B1EEF00367F38 /* Preview Assets.xcassets in Resources */,
 				47FF44162B5B1EEF00367F38 /* Assets.xcassets in Resources */,
+				47F37D112BBE4D9F0084B232 /* Yellowtail-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +475,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RechargeTeach/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -487,6 +506,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RechargeTeach/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -24,58 +24,109 @@ struct NavView: View {
                 ZStack{
                     Color(offwhiteBG).ignoresSafeArea()
                     ScrollView {
-                        
+
+
                         // DAILY WORD
                         VStack {
                             Text("Today's word:")
+                                .font(.custom("Jost", size: 30))
+                                .padding(.bottom, 5)
                             Text("\(dailyWord)")
-                        }.padding(40)
+                        }.padding(.top, 30)
+                            .font(.custom("Yellowtail-Regular", size: 45))
+
+
 
                         // FOCUS
                         NavigationLink(destination:
                                         Text("Second screen."))
                         {
                             ZStack {
-                                RoundedRectangle(cornerRadius: 25)
+                                HStack{
+                                    Text("Focus")
+                                        .foregroundColor(.white)
+                                        .font(.custom("Jost", size: 25))
+                                        .padding(.leading, 35)
+                                    Image("coffee maker")
+                                        .shadow(radius: 1)
+                                        .padding(.leading, 20)
+                                }
+                                .background(
+                                    RoundedRectangle(cornerRadius: 25)
                                     .frame(width: 300, height: 150)
-                                    .foregroundColor(chocBrown)
-                                Text("Focus")
-                                    .foregroundColor(.white)
-                                // MOVE TEXT
-                            }.padding(20)
+                                    .foregroundColor(chocBrown))
+
+                                // BORDER
+                                .background(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .frame(width: 305, height: 155)
+                                        .foregroundColor(.black))
+                            }.padding(10)
                         }
+
+
 
                         // FIDGET - might change ??
                         NavigationLink(destination:
                                         Text("Second screen."))
                         {
                             ZStack {
+                                HStack{
+                                    Text("Fidget")
+                                        .foregroundColor(.white)
+                                        .font(.custom("Jost", size: 25))
+                                        .padding(.leading, 35)
+                                    Image("french press")
+                                        .shadow(radius: 1)
+                                        .padding(.leading, 20)
+                                }
+                                .background(
                                 RoundedRectangle(cornerRadius: 25)
                                     .frame(width: 300, height: 150)
-                                    .foregroundColor(chocBrown)
-                                Text("Fidget")
-                                    .foregroundColor(.white)
-                                // MOVE TEXT
-                            }.padding(20)
+                                    .foregroundColor(chocBrown))
+                                // BORDER
+                                .background(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .frame(width: 305, height: 155)
+                                        .foregroundColor(.black))
+                            }.padding(10)
                         }
+
+
 
                         // INSPIRATION
                         NavigationLink(destination:
                                         Text("Second screen."))
                         {
                             ZStack {
+                                HStack{
+                                    Text("Inspiration")
+                                        .foregroundColor(.white)
+                                        .font(.custom("Jost", size: 25))
+                                        .padding(.leading, 35)
+                                    Image("espresso maker")
+                                        .shadow(radius: 1)
+                                        .padding(.leading, -20)
+                                }
+                                .background(
                                 RoundedRectangle(cornerRadius: 25)
                                     .frame(width: 300, height: 150)
-                                    .foregroundColor(chocBrown)
-                                Text("Inspiration")
-                                    .foregroundColor(.white)
-                                // MOVE TEXT
-                            }.padding(20)
+                                    .foregroundColor(chocBrown))
+                                // BORDER
+                                .background(
+                                    RoundedRectangle(cornerRadius: 25)
+                                        .frame(width: 305, height: 155)
+                                        .foregroundColor(.black))
+                            }.padding(10)
                         }
 
                     } // scrollview
                 } // zstack
+                .padding(.bottom, 10)
+
+                Text(" ")
             }.background(chocBrown) // vstack
+                                                // add thin black line to make a border for the header and footer ? maybe ? kinda aesthetic
         } // navview
     }
 }
@@ -83,7 +134,7 @@ struct NavView: View {
 
 
 struct DailyWord {
-    static let wordList = ["Always", "Love", "Try", "Courage", "Care"]
+    static let wordList = ["ALWAYS", "LOVE", "TRY", "COURAGE", "CARE"]
     // ADD MORE
 
     static func getDailyWord() -> String {
