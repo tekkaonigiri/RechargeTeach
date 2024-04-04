@@ -10,7 +10,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    let offwhiteBG = Color(red: 234, green: 231, blue: 231)
+
+    let offwhiteBG = Color(red: 234/255, green: 231/255, blue: 231/255)
     let chocBrown = Color(red: 152/255, green: 94/255, blue: 73/255)
 
     var body: some View {
