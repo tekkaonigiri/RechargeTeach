@@ -11,6 +11,10 @@
 		47F37CFE2BBDDEEC0084B232 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37CFD2BBDDEEC0084B232 /* NavView.swift */; };
 		47F37D0E2BBE4CD80084B232 /* Jost.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F37D0C2BBE30B00084B232 /* Jost.ttf */; };
 		47F37D112BBE4D9F0084B232 /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */; };
+		47F37D132BC33B4F0084B232 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37D122BC33B4F0084B232 /* TimerView.swift */; };
+		47F37D152BC33BFD0084B232 /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37D142BC33BFD0084B232 /* TimeManager.swift */; };
+		47F37D172BC33C210084B232 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37D162BC33C210084B232 /* Helper.swift */; };
+		47F37D1A2BC346AB0084B232 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37D192BC346AB0084B232 /* FocusView.swift */; };
 		47FF44122B5B1EEE00367F38 /* RechargeTeachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */; };
 		47FF44142B5B1EEE00367F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF44132B5B1EEE00367F38 /* ContentView.swift */; };
 		47FF44162B5B1EEF00367F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FF44152B5B1EEF00367F38 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		47F37D052BBE2AE50084B232 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		47F37D0C2BBE30B00084B232 /* Jost.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Jost.ttf; sourceTree = "<group>"; };
 		47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yellowtail-Regular.ttf"; sourceTree = "<group>"; };
+		47F37D122BC33B4F0084B232 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		47F37D142BC33BFD0084B232 /* TimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		47F37D162BC33C210084B232 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		47F37D192BC346AB0084B232 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		47FF440E2B5B1EEE00367F38 /* RechargeTeach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RechargeTeach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeTeachApp.swift; sourceTree = "<group>"; };
 		47FF44132B5B1EEE00367F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 				47FF44132B5B1EEE00367F38 /* ContentView.swift */,
 				47F37CFD2BBDDEEC0084B232 /* NavView.swift */,
 				47E136A22B959D2700872439 /* BeginPage.swift */,
+				47F37D182BC3468D0084B232 /* Focus */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,6 +107,15 @@
 				47F37D0C2BBE30B00084B232 /* Jost.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		47F37D182BC3468D0084B232 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				47F37D192BC346AB0084B232 /* FocusView.swift */,
+				47F37D122BC33B4F0084B232 /* TimerView.swift */,
+			);
+			path = Focus;
 			sourceTree = "<group>";
 		};
 		47FF44052B5B1EEE00367F38 = {
@@ -124,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				47E1369F2B959CD300872439 /* Views */,
+				47F37D142BC33BFD0084B232 /* TimeManager.swift */,
+				47F37D162BC33C210084B232 /* Helper.swift */,
 				47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */,
 				47FF44152B5B1EEF00367F38 /* Assets.xcassets */,
 				47FF441A2B5B1EEF00367F38 /* RechargeTeach.entitlements */,
@@ -292,9 +312,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E136A32B959D2700872439 /* BeginPage.swift in Sources */,
+				47F37D172BC33C210084B232 /* Helper.swift in Sources */,
 				47FF44142B5B1EEE00367F38 /* ContentView.swift in Sources */,
+				47F37D152BC33BFD0084B232 /* TimeManager.swift in Sources */,
 				47F37CFE2BBDDEEC0084B232 /* NavView.swift in Sources */,
+				47F37D1A2BC346AB0084B232 /* FocusView.swift in Sources */,
 				47FF44122B5B1EEE00367F38 /* RechargeTeachApp.swift in Sources */,
+				47F37D132BC33B4F0084B232 /* TimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
