@@ -40,9 +40,7 @@ struct NavView: View {
 
 
                         // FOCUS
-                        NavigationLink(destination:
-                                        Text("Second screen.")) {
-                                        // replace w view
+                        NavigationLink(destination: FocusView()) {
                             ZStack {
                                 HStack{
                                     Text("Focus")
@@ -74,7 +72,7 @@ struct NavView: View {
                                         // replace w view
                             ZStack {
                                 HStack{
-                                    Text("Fidget")
+                                    Text("ToDo List")
                                         .foregroundColor(.white)
                                         .font(.custom("Jost", size: 25))
                                         .padding(.leading, 35)

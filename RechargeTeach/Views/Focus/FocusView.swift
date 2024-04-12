@@ -56,11 +56,17 @@ struct FocusView: View {
                     }
                 }
 
+                // footer
                 NavigationLink(destination: NavView()) {
-                    Text("Home")
-                    // change it to a home image button
-                    // add an arrow button to use as a back button
+                    VStack{
+                        Text(" ")
+                            .font(.footnote)
+                        Image(systemName: "house.fill")
+                            .font(.title)
+                            .foregroundColor(offwhiteBG)
+                    }
                 }
+
             }.background(chocBrown) // vstack
         } // nav view
         .navigationBarBackButtonHidden(true)
