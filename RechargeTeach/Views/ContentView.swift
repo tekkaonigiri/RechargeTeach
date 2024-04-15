@@ -20,16 +20,16 @@ struct ContentView: View {
                 Color(offwhiteBG).ignoresSafeArea()
                 VStack {
                     Text("RECHARGETEACH")
-                        .font(.custom("Jost", size: 35))
+                        .font(.custom("Jost", size: 30))
                         .padding()
                     NavigationLink(destination: NavView()) {
                         Text("Begin")
                         .background(
                             RoundedRectangle(cornerRadius: 50)
                                 .foregroundColor(chocBrown)
-                                .frame(width: 200, height: 60))
+                                .frame(width: 110, height: 40))
                         .tint(.white)
-                        .font(.custom("Jost", size: 30))
+                        .font(.custom("Jost", size: 25))
                     }
                 }
             }

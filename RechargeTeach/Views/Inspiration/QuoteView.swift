@@ -1,16 +1,16 @@
 //
-//  FocusView.swift
+//  QuoteView.swift
 //  RechargeTeach
 //
-//  Created by Nicole Fong on 4/7/24.
+//  Created by Nicole Fong on 4/14/24.
 //
 
-/// NOTE: this is the page for the circleprogressbar
+/// NOTE: this is the page for the generateinsoview
 
 import Foundation
 import SwiftUI
 
-struct TimerView: View {
+struct QuoteView: View {
     
     let offwhiteBG = Color(red: 234/255, green: 231/255, blue: 231/255)
     let chocBrown = Color(red: 152/255, green: 94/255, blue: 73/255)
@@ -20,9 +20,8 @@ struct TimerView: View {
             VStack{
                 Text(" ")
                 ZStack{
-                    CircleProgressBar(minutes: 1, seconds: 0)
-                    // DO NOT SET CIRCLEPROGRESSBAR TO ZERO - otherwise is doesn't work
-                }
+                    GenerateInspoView()
+                }.background(.white)
                 
                 // footer
                 NavigationLink(destination: NavView()) {
@@ -42,5 +41,5 @@ struct TimerView: View {
 } // struc view
     
 #Preview {
-    TimerView()
+    QuoteView()
 }

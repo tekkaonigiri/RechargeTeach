@@ -53,23 +53,22 @@ struct NavView: View {
                                 }
                                 .background(
                                     RoundedRectangle(cornerRadius: 25)
-                                    .frame(width: 300, height: 150)
+                                    .frame(width: 275, height: 135)
                                     .foregroundColor(chocBrown))
 
                                 // BORDER
                                 .background(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .frame(width: 305, height: 155)
+                                        .frame(width: 280, height: 140)
                                         .foregroundColor(.black))
-                            }.padding(10)
+                            }.padding(5)
                         }
 
 
 
                         // FIDGET - might change ??
                         NavigationLink(destination:
-                                        Text("Second screen.")) {
-                                        // replace w view
+                                        ToDoView()) {
                             ZStack {
                                 HStack{
                                     Text("ToDo List")
@@ -78,26 +77,24 @@ struct NavView: View {
                                         .padding(.leading, 35)
                                     Image("french press")
                                         .shadow(radius: 1)
-                                        .padding(.leading, 20)
                                 }
                                 .background(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .frame(width: 300, height: 150)
+                                    .frame(width: 275, height: 135)
                                     .foregroundColor(chocBrown))
                                 // BORDER
                                 .background(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .frame(width: 305, height: 155)
+                                        .frame(width: 280, height: 140)
                                         .foregroundColor(.black))
-                            }.padding(10)
+                            }.padding(5)
                         }
 
 
 
                         // INSPIRATION
                         NavigationLink(destination:
-                                        Text("Second screen.")) {
-                                        // replace w view
+                                        InspirationView()) {
                             ZStack {
                                 HStack{
                                     Text("Inspiration")
@@ -106,18 +103,18 @@ struct NavView: View {
                                         .padding(.leading, 35)
                                     Image("espresso maker")
                                         .shadow(radius: 1)
-                                        .padding(.leading, -20)
+                                        .padding(.leading, -17)
                                 }
                                 .background(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .frame(width: 300, height: 150)
+                                    .frame(width: 275, height: 135)
                                     .foregroundColor(chocBrown))
                                 // BORDER
                                 .background(
                                     RoundedRectangle(cornerRadius: 25)
-                                        .frame(width: 305, height: 155)
+                                        .frame(width: 280, height: 140)
                                         .foregroundColor(.black))
-                            }.padding(10)
+                            }.padding(5)
                         }
 
                     } // scrollview
@@ -135,9 +132,8 @@ struct NavView: View {
 
 
 struct DailyWord {
-    static let wordList = ["ALWAYS", "LOVE", "TRY", "COURAGE", "CARE"]
+    static let wordList = ["ADVENTURE", "ALWAYS", "BEAUTY", "BELIEVE", "BELONG", "CARE", "COMFORT", "COURAGE", "CREATE", "EMBRACE", "EXPLORE", "FAITH", "FEARLESS", "FINISH", "FOCUS", "FORGIVE", "FREE", "GIVE", "GLOW", "GRACE", "GROW", "HEART", "HOPE", "HUMBLE", "IMAGINE", "INTEGRITY", "JOURNEY", "JOY", "KINDNESS", "LAUGH", "LEARN", "LIGHT", "LISTEN", "LOVE", "NOW", "PASSION", "PATIENCE", "PEACE", "PRESENT", "PURPOSE", "REFLECT", "RELAX", "SMILE", "STRIVE", "THOUGHTFUL", "TRUTH", "TRY", "UNLIMITED", "WISDOM", "WISH", "WONDER", "WORK"]
     // ADD MORE
-
     static func getDailyWord() -> String {
         let calendar = Calendar.current
         let date = Date()
@@ -147,6 +143,11 @@ struct DailyWord {
     }
 }
 
+
+// just in case it gets deleted on accident lol
+/*
+ "ADVENTURE", "ALWAYS", "BEAUTY", "BELIEVE", "BELONG", "CARE", "COMFORT", "COURAGE", "CREATE", "EMBRACE", "EXPLORE", "FAITH", "FEARLESS", "FINISH", "FOCUS", "FORGIVE", "FREE", "GIVE", "GLOW", "GRACE", "GROW", "HEART", "HOPE", "HUMBLE", "IMAGINE", "INTEGRITY", "JOURNEY", "JOY", "KINDNESS", "LAUGH", "LEARN", "LIGHT", "LISTEN", "LOVE", "NOW", "PASSION", "PATIENCE", "PEACE", "PRESENT", "PURPOSE", "REFLECT", "RELAX", "SMILE", "STRIVE", "THOUGHTFUL", "TRUTH", "TRY", "UNLIMITED", "WISDOM", "WISH", "WONDER", "WORK"
+ */
 
 
 #Preview {

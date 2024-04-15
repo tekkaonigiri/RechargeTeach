@@ -5,6 +5,10 @@
 //  Created by Nicole Fong on 4/12/24.
 //
 
+
+/// NOTE: This is a timer AND circle progress bar
+
+
 import SwiftUI
 
 let timer = Timer
