@@ -23,7 +23,6 @@
 		47F37D112BBE4D9F0084B232 /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */; };
 		47F37D132BC33B4F0084B232 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37D122BC33B4F0084B232 /* TimerView.swift */; };
 		47F37D1A2BC346AB0084B232 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37D192BC346AB0084B232 /* FocusView.swift */; };
-		47F37DAC2BC727AC0084B232 /* CoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F37DAB2BC727AC0084B232 /* CoffeeView.swift */; };
 		47FF44122B5B1EEE00367F38 /* RechargeTeachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */; };
 		47FF44142B5B1EEE00367F38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FF44132B5B1EEE00367F38 /* ContentView.swift */; };
 		47FF44162B5B1EEF00367F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47FF44152B5B1EEF00367F38 /* Assets.xcassets */; };
@@ -66,7 +65,6 @@
 		47F37D102BBE4D9F0084B232 /* Yellowtail-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yellowtail-Regular.ttf"; sourceTree = "<group>"; };
 		47F37D122BC33B4F0084B232 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		47F37D192BC346AB0084B232 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		47F37DAB2BC727AC0084B232 /* CoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeView.swift; sourceTree = "<group>"; };
 		47FF440E2B5B1EEE00367F38 /* RechargeTeach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RechargeTeach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FF44112B5B1EEE00367F38 /* RechargeTeachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeTeachApp.swift; sourceTree = "<group>"; };
 		47FF44132B5B1EEE00367F38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				47F37D192BC346AB0084B232 /* FocusView.swift */,
 				47F37D122BC33B4F0084B232 /* TimerView.swift */,
 				47339BAC2BC992D7006A93D5 /* CircleProgressBar.swift */,
-				47F37DAB2BC727AC0084B232 /* CoffeeView.swift */,
 			);
 			path = Focus;
 			sourceTree = "<group>";
@@ -352,7 +349,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E136A32B959D2700872439 /* BeginPage.swift in Sources */,
-				47F37DAC2BC727AC0084B232 /* CoffeeView.swift in Sources */,
 				47FF44142B5B1EEE00367F38 /* ContentView.swift in Sources */,
 				477594672BCCDAED00E41970 /* QuoteView.swift in Sources */,
 				477594632BCC931300E41970 /* GenerateInspoView.swift in Sources */,
@@ -535,7 +531,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RechargeTeach/Preview Content\"";
-				DEVELOPMENT_TEAM = 6TPQVQLMZN;
+				DEVELOPMENT_TEAM = 5ANFRKWD98;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -543,17 +539,20 @@
 				INFOPLIST_KEY_CFBundleDisplayName = RechargeTeach;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Notification-App.RechargeTeach";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.RechargeTeach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -572,7 +571,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"RechargeTeach/Preview Content\"";
-				DEVELOPMENT_TEAM = 6TPQVQLMZN;
+				DEVELOPMENT_TEAM = 5ANFRKWD98;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -580,17 +579,20 @@
 				INFOPLIST_KEY_CFBundleDisplayName = RechargeTeach;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Notification-App.RechargeTeach";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.RechargeTeach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -611,8 +613,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Notification-App.RechargeTeachTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -635,8 +640,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Notification-App.RechargeTeachTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -652,13 +660,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 6TPQVQLMZN;
+				DEVELOPMENT_TEAM = 5ANFRKWD98;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Notification-App.RechargeTeachUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -678,8 +689,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Notification-App.RechargeTeachUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

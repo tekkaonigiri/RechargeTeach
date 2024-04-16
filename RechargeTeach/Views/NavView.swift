@@ -66,7 +66,7 @@ struct NavView: View {
 
 
 
-                        // FIDGET - might change ??
+                        // TODO LIST
                         NavigationLink(destination:
                                         ToDoView()) {
                             ZStack {
