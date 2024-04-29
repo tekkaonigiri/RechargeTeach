@@ -28,6 +28,7 @@ struct InspirationView: View {
                         Text("\"Believe you can and you're halfway there.\" - Theodore Roosevelt")
                             .font(.custom("Jost", size: 25))
                             .padding(60)
+                            .foregroundColor(.black)
                             .multilineTextAlignment(.center)
                         
                         // TIMER

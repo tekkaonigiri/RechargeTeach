@@ -58,6 +58,7 @@ struct GenerateInspoView: View {
                 Text(quotes[quoteIndex])
                     .padding(20)
                     .font(.custom("Jost", size: 60))
+                    .foregroundColor(.black)
                     .multilineTextAlignment(.center)
 
                 HStack{

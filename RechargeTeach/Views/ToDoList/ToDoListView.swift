@@ -24,6 +24,7 @@ struct ToDoListView: View {
         HStack {
             TextField("Enter a new task", text: self.$newToDo)
                 .font(.custom("Jost", size: 20))
+                .foregroundColor(.black)
             Button(action: self.addTask, label: {
                 Text("Add New")
                     .font(.custom("Jost", size: 20))
@@ -38,6 +39,7 @@ struct ToDoListView: View {
                 VStack {
                     Text("To Do List")
                         .font(.custom("Jost", size: 40))
+                        .foregroundColor(.black)
                     typeBar.padding()
                     List {
                         ForEach(self.taskStore.tasks) { task in

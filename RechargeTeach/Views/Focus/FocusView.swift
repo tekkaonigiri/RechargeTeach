@@ -27,6 +27,7 @@ struct FocusView: View {
                         
                         Text("\"Focus on living fully in the present.\" - Roy T. Bennett")
                             .font(.custom("Jost", size: 25))
+                            .foregroundColor(.black)
                             .padding(60)
                             .multilineTextAlignment(.center)
                         

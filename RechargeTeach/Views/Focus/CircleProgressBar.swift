@@ -71,6 +71,7 @@ struct CircleProgressBar: View {
                     // Ensure remaining time is non-negative
                         .font(.custom("Jost", size: 60))
                         .fontWeight(.black)
+                        .foregroundColor(.black)
 
                 } // zstack
 

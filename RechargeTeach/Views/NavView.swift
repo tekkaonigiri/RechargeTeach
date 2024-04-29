@@ -33,9 +33,11 @@ struct NavView: View {
                             Text("Today's word:")
                                 .font(.custom("Jost", size: 30))
                                 .padding(.bottom, 5)
+                                .foregroundColor(.black)
                             Text("\(dailyWord)")
                         }.padding(.top, 30)
                             .font(.custom("Yellowtail-Regular", size: 45))
+                            .foregroundColor(.black)
 
 
 

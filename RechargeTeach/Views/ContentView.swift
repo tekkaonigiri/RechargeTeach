@@ -21,6 +21,7 @@ struct ContentView: View {
                 VStack {
                     Text("RECHARGETEACH")
                         .font(.custom("Jost", size: 30))
+                        .foregroundColor(.black)
                         .padding()
                     NavigationLink(destination: NavView()) {
                         Text("Begin")

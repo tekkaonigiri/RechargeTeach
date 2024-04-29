@@ -35,6 +35,7 @@ struct TimerView: View {
                                 Picker("Minutes", selection: $userMin) {
                                     ForEach(0..<60) { minute in
                                         Text("\(minute) min").tag(minute)
+                                            .foregroundColor(.black)
                                     }
                                 }
                                 .pickerStyle(WheelPickerStyle())
@@ -43,6 +44,7 @@ struct TimerView: View {
                                 Picker("Seconds", selection: $userSec) {
                                     ForEach(0..<60) { second in
                                         Text("\(second) sec").tag(second)
+                                            .foregroundColor(.black)
                                     }
                                 }
                                 .pickerStyle(WheelPickerStyle())
